@@ -29,12 +29,21 @@ header {
   }
 
   /* Estilos de la seccion principal */
+  .bienvenidos {
+    margin-top: 5rem;
+  }
   body {
     background-image: url(images/fondobody2.png);
+  }
+  .textemuladores{
+    background-color: rgba(7, 7, 7, 0.75);
+    border-radius: 1.5rem;
   }
   .fondo {
     background-color: transparent !important;
   }
+
+
 main {
     color: #FFFFFF;
     display: flex;
@@ -65,6 +74,11 @@ main {
   }
   
   /* Estilos del footer */
+
+  .audio {
+    display: flex;
+    justify-content: center;
+  }
   footer {
     background-color: #EFC529;
     color: #1A1A1A;
@@ -80,6 +94,8 @@ main {
     margin: 0;
   }
   
+  
+
   /* Media Queries */
   @media screen and (max-width: 768px) {
     header {
