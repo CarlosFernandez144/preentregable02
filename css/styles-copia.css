@@ -1,28 +1,4 @@
-header {
-    background-color: #FF6EC7;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  .logo {
-    width: 2rem;
-  }
-  .navbar {
-    background-color: #02303b;
-    position: fixed;
-  top: 0;
-  width: 100%;
 
-  }
-  ul li {
-    display: inline-block;
-    text-align: center;
-    list-style:none;
-  padding: 0.5rem;
-  border-bottom: 1px solid #FFFFFF;
-}
  h1 {
     font-size: 2.5rem;
     margin: 0;
@@ -75,10 +51,7 @@ main {
   
   /* Estilos del footer */
 
-  .audio {
-    display: flex;
-    justify-content: center;
-  }
+  
   footer {
     background-color: #EFC529;
     color: #1A1A1A;

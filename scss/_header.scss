@@ -1,0 +1,45 @@
+$navbarbgc: #02303b ;
+
+.header { background-color: $navbarbgc;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .navbar{
+        background-color: $navbarbgc;
+        margin-top: 0;
+        width: 100%;
+     
+
+        ul li a {
+            transition: transform 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            list-style:none;
+            padding: 0.5rem;
+            
+            
+        }
+            
+        ul li a:hover {
+            transform: scale(1.2);
+        }    
+            
+       
+    }
+
+    .logo {
+        width: 3rem;
+        transition: transform 0.3s ease;
+        margin: 1rem;
+        
+        
+    }
+    .logo:hover {
+        transform: scale(1.2);
+
+    }
+    
+}

@@ -1,0 +1,31 @@
+/*section 2*/
+/* font-family: 'Oswald', sans-serif; */
+$fuente: 'Oswald', sans-serif;
+$navbarbgc: #02303b ;
+
+
+.section2 {
+    background-color: $navbarbgc;
+    color: #1A1A1A;
+    text-align: center;
+    padding: 2rem;
+
+    .image8bit {
+        width: 2rem;
+        
+      }
+
+    .list-unstyled{
+            display: inline-block;
+            text-align: center;
+            list-style:none;
+            padding: 0.5rem;
+
+        
+
+           
+
+    }  
+    
+  }
+
