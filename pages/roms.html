@@ -11,94 +11,330 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
-    <!--favicon-->
-    <link rel="icon" type="image/png" href="../images/favicon2.png"/>
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="../images/favicon2.png" />
   <title>ROMs</title>
   <!-- Importamos los estilos de Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Importamos las fuentes de google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   <!-- Importamos nuestros propios estilos -->
   <link rel="stylesheet" href="../css/style.css">
+  <!-- Importamos animaciones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <img class="logo" src="../images/icono.png">
-      <a class="navbar-brand" href="#">Capi Retro Games</a>
-      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="../pages/emuladores.html">Emuladores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="../pages/roms.html">ROMs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="../pages/noticias.html">Noticias</a>
-          </li>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <a href="../index.html"><img class="logo" src="../images/icono.png"></a>
+
+      <div class="container-fluid">
+        
+        
+        <a class="navbar-brand" >Capi Retro Games</a>
+        
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/emuladores.html">Emuladores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/roms.html"><span>ROMs</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/noticias.html">Noticias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Sección principal con imagen y texto -->
+
+<section class="section1">
+
+  
+  <div class="container titulos"><h2 id="supermario" class="subtitulos section1">ROMs - Nes</h2></div>
+
+  <div class="roms">
+
+     <img class="imageroms" src="../images/marioromnes2.avif" alt="juego de mario">
+       <p class="romstext">Super Mario Bros - ROM.Nes </p>
+       <div class="boton">
+         <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+       </div>
+      
+  </div>
+
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/mario3.jpeg" alt="juego de mario 3">
+      <p id="adventureislander" class="romstext">Super Mario Bros 3 - ROM.Nes </p>
+      <div class="boton">
+        <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+      </div>
+     
+ </div>
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/adventuresislan.jpg" alt="adventure islander 3">
+       <p id="supercontra" class="romstext">Adventure Islander 3 - ROM.Nes      </p>
+
+       <div class="boton">
+         <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+       </div>
+
+  </div>
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/contranes.jpg" alt="juego contra.nes">
+       <p class="romstext">Contra 1987   -   ROM.Nes </p>
+
+       <div class="boton">
+         <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+       </div>
+
+  </div>
+
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/tortugas.jpg" alt="tortugas ninjas 3">
+       <p id="spartan" class="romstext"> Tortugas Ninja 3  </p>
+
+       <div class="boton">
+         <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+       </div>
+
+  </div>
+
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/spartan.webp" alt="juego spartan.nes">
+       <p class="romstext"> Spartan Kung-fu - ROM.Nes </p>
+
+       <div class="boton">
+         <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+       </div>
+
+  </div>
+
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/iceclimber1.jpg" alt="juego ice climber">
+      <p class="romstext"> Ice-Climber - ROM.Nes </p>
+      <div class="boton">
+        <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+      </div>
+
+
+     
+  </div>
+
+
+  <div class="roms">
+
+    <img class="imageroms" src="../images/castlevania.jpg" alt="juego castlevania">
+      <p class="romstext"> Castlevania - ROM.Nes </p>
+      <div class="boton">
+        <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+      </div>
+     
+ </div>
+
+ <div class="container titulos"><h2 class="subtitulos section1">ROMs - SNES</h2></div>
+
+ <div class="roms3">
+
+  <img class="imageroms" src="../images/mariosnes.jpg" alt="mario world">
+    <p class="romstext"> Super Mario World </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+</div>
+
+
+<div class="roms3">
+
+  <img class="imageroms" src="../images/misspacman.jpg" alt="miss pac man">
+    <p class="romstext"> Miss Pac-man </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+</div>
+
+<div class="roms3">
+
+  <img class="imageroms" src="../images/starfox.jpg" alt="star fox">
+    <p class="romstext"> Star Fox </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+</div>
+
+
+<div class="roms3">
+
+  <img class="imageroms" src="../images/streetf2t.jpg" alt="street Fighter 2">
+    <p class="romstext"> Street Fighter 2 turbo </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+</div>
+
+
+<div class="roms3">
+
+  <img class="imageroms" src="../images/mortalkombat.webp" alt="mortal kombat">
+    <p class="romstext"> Mortal Kombat </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+</div>
+
+<div class="roms3">
+
+  <img class="imageroms" src="../images/sonic.jpg" alt="sonic">
+    <p class="romstext"> Sonic The Edgehog </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+</div>
+     
+ <div class="container titulos"><h2 id="pokemon" class="subtitulos section1">ROMs - GBA</h2></div>
+
+
+  <div class="roms2">
+
+    <img class="imageroms" src="../images/pokemonrojo.jpg" alt="juego pokemon">
+    <p class="romstext"> Pokemon Rojo Fuego  </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+  </div>
+
+  <div class="roms2">
+
+    <img class="imageroms" src="../images/pokemonverde.png" alt="pokemon verde">
+    <p class="romstext"> Pokemon Verde Hoja</p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+  </div>
+
+  <div class="roms2">
+
+    <img class="imageroms" src="../images/dkkcountry.webp" alt="Donkey Kong Country">
+    <p class="romstext"> Donkey Kong Country </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+  </div>
+
+
+  <div class="roms2">
+
+    <img class="imageroms" src="../images/metroidfusion.jpg" alt="juego Metroid fusion">
+    <p class="romstext"> Metroid Fusion </p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+  </div>
+
+
+
+  <div class="roms2">
+
+    <img class="imageroms" src="../images/dbzbuusfury.jpg" alt="juego dragon ball buu fury">
+    <p class="romstext"> DBZ Buus Fury</p>
+    <div class="boton">
+      <a href="../pages/emuladores.html"><button class="button"><p class="romstext">Descargar</p></button></a>
+    </div>
+   
+  </div>
+
+  </div>
+</section>
+
+  <section class="bg-dark section1 text-light">
+
+    <div class="container">
+
+  </section>
+
+    <!-- Sección intermedia con lista de juegos -->
+    <section class="section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-8 col-lg-4">
+            <img src="../images/pikachucorriendo.gif" class="image8bit">
+          </div>
+          <div class="col-12 col-sm-8 col-lg-4">
+            <img src="../images/mariocorriendo.gif" class="image8bit">
+          </div>
+          <div class="col-12 col-sm-8 col-lg-4">
+            <img src="../images/contracorriendo.gif" class="image8bit">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Nuestros juegos favoritos</h2>
+        <ul class="list-unstyled">
+          <a href="#supermario"><li>Super Mario Bros</li></a>
+          <a href="#pokemon"><li>Pokemon</li></a>
+          <a href="#adventureislander"><li>Adventure Islander III</li></a>
+          <a href="#supercontra"><li>Super Contra</li></a>
+          <a href="#spartan"><li>Spartan</li></a>
         </ul>
       </div>
-    </div>
-  </nav>
-  <!-- Sección principal con imagen y texto -->
-  <section class="bg-dark fondo text-light">
-    <div class="container">
-      <h2>Bienvenidos a Capi Retro Games</h2>
-      <p>Revive la magia de los videojuegos retro de los años 80 y 90. Aquí encontrarás los mejores juegos y consolas de
-        la época dorada del gaming.</p>
-      <img class="imagen" src="images/imagenppl.png" alt="Imagen de  retro">
-    </div>
-  </section>
+    </section>
 
-  <!-- Sección intermedia con lista de juegos -->
-  <section class="text-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-12  col-sm-8 col-lg-4">
-          <img src="../images/pikachu3.png" class="image8bit">
-        </div>
-        <div class="col-12  col-sm-8 col-lg-4">
-          <img src="../images/hunter.png" class="image8bit">
-        </div>
-        <div class="col-12  col-sm-8 col-lg-4">
-          <img src="../images/gusano.png" class="image8bit">
-        </div>
+    <!-- Footer con datos del desarrollador -->
+    <footer>
+      <div class="footer">
+        <p class="text-footer">Desarrollado por Carlos Fernandez © </p>
       </div>
-    </div>
-    </div>
-    <div class="container">
-      <h2>Nuestros juegos favoritos</h2>
-      <ul class="list-unstyled">
-        <li>Super Mario Bros.</li>
-        <li>The Legend of Zelda</li>
-        <li>Mega Man</li>
-        <li>Street Fighter II</li>
-        <li>Sonic the Hedgehog</li>
-      </ul>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer con datos del desarrollador -->
-  <footer class="text-light">
-    <div class="container">
-      <p class="text-center">Desarrollado por Carlos Fernandez © </p>
-    </div>
-  </footer>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Importamos los scripts de Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 
 </body>
 

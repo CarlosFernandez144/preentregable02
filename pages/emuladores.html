@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
+
   <!--favicon-->
   <link rel="icon" type="image/png" href="../images/favicon2.png" />
   <title>Emuladores</title>
@@ -45,7 +46,7 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../pages/emuladores.html">Emuladores</a>
+              <a class="nav-link active" href="../pages/emuladores.html"><span>Emuladores</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="../pages/roms.html">ROMs</a>
@@ -54,31 +55,41 @@
               <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../pages/noticias.html"><span>Noticias</span></a>
+              <a class="nav-link active" href="../pages/noticias.html">Noticias</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
   <!-- Sección principal con imagen y texto -->
-  <section class="bg-dark text-light">
+  <section class="bg-dark text-light section1">
     <div class="container">
-      <h2 style="text-align: center;">.:Emuladores:.</h2>
+      <h2 class="titulos">.:Emuladores:.</h2>
     </div>
-    <img src="../images/abajo.gif">
 
-    <!--emuladores-->
 
-    <h2>Emulador VirtuaNES para PC (NES): Descargar e Instalar:</h2>
+    <!--seccion principal imagenes y titulos-->
 
-    <img class="imagen" alt="imagen de consola nes" src="../images/consolanes2.png">
+    
+    <h2 class="titulos">Emulador VirtuaNES para PC (NES): Descargar e Instalar:</h2>
 
-    <h2>Descargar VirtuaNES Gratis para tu Ordenador.</h2>
-    <h3 style="text-align: left;">Para descargar VirtuaNES para PC deberás seguir las siguientes instrucciones:</h3>
+    
+    <div class="container">
+      <img class="imagen" alt="imagen de consola nes" src="../images/consolanes2.png">
     </div>
+
+    <h2 class="titulos">Descargar VirtuaNES Gratis para tu Ordenador.</h2>
+    
+
   </section>
-  <section class="bg-dark text-light">
+
+
+  <section class="bg-dark text-light section2">
+      
+    <h3 class="subtitulos">Para descargar VirtuaNES para PC deberás seguir las siguientes instrucciones:</h3>
+
     <ol style="text-align: left; font-size: medium; color: white;">
       <li>Descarga el archivo desde el botón que te dejamos abajo.</li>
       <li>En caso de que te pida confirmación, confirma la descarga de origen desconocido.</li>
@@ -88,26 +99,43 @@
       <li>Ejecutamos el archivo .exe.</li>
       <li>Seguiremos con las instrucciones de instalación.</li>
     </ol>
-    <div class="boton">
-      <button class="button"><a href="https://mega.nz/file/ovszSAAY#M50CtI4A7x1xk7zgJJtb10d9pOliMgn3ackUx-v5zrc"
-          target="_blank">Descarga VirtuaNes</a></button>
+
+    <div class="boton section1">
+
+        <div class="boton">
+            <a href="https://mega.nz/file/ovszSAAY#M50CtI4A7x1xk7zgJJtb10d9pOliMgn3ackUx-v5zrc" target="_blank" ><button class="button">Descarga VirtuaNes</button></a></div>
+        </div>
+
+
     </div>
+
+    <h3 class="subtitulos">Para instalar VirtuaNES en tu ordenador tendrás que seguir las indicaciones que te dejamos a continuación:</h3>
+ 
+    <ol style="text-align: left; font-size: medium; color: white;">
+      <li>Antes de proceder con la instalación nos aseguraremos de que estamos ejecutando el proceso en un sistema operativo compatible.</li>
+      <li>Una vez ejecutado el archivo de instalación, seguiremos las indicaciones del instalador.</li>
+      <li>Selecciona la opción de crear un acceso directo, así podrás ejecutar el emulador desde el escritorio.</li>
+      <li>Una vez finalizada la instalación, puedes ir al escritorio y pinchar en el icono correspondiente para disfrutar de VirtuaNES.</li>
+      
+    </ol>
+ 
+ 
   </section>
 
 
 
-  <!-- Sección intermedia con lista de juegos -->
-  <section class="section2">
+   <!-- Sección intermedia con lista de juegos -->
+   <section class="section2">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-8 col-lg-4">
-          <img src="../images/pikachu3.png" class="image8bit">
+          <img src="../images/pikachucorriendo.gif" class="image8bit">
         </div>
         <div class="col-12 col-sm-8 col-lg-4">
-          <img src="../images/hunter.png" class="image8bit">
+          <img src="../images/mariocorriendo.gif" class="image8bit">
         </div>
         <div class="col-12 col-sm-8 col-lg-4">
-          <img src="../images/gusano.png" class="image8bit">
+          <img src="../images/contracorriendo.gif" class="image8bit">
         </div>
       </div>
     </div>
@@ -115,21 +143,11 @@
     <div class="container">
       <h2>Nuestros juegos favoritos</h2>
       <ul class="list-unstyled">
-        <a href="#">
-          <li>Super Mario Bros</li>
-        </a>
-        <a href="#">
-          <li>Pokemon</li>
-        </a>
-        <a href="#">
-          <li>Adventure Islander III</li>
-        </a>
-        <a href="#">
-          <li>Super Contra</li>
-        </a>
-        <a href="">
-          <li>Spartan</li>
-        </a>
+        <a href="../pages/roms.html"><li>Super Mario Bros</li></a>
+        <a href="../pages/roms.html"><li>Pokemon</li></a>
+        <a href="../pages/roms.html"><li>Adventure Islander III</li></a>
+        <a href="../pages/roms.html"><li>Super Contra</li></a>
+        <a href="../pages/roms.html"><li>Spartan</li></a>
       </ul>
     </div>
   </section>

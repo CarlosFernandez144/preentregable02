@@ -1,0 +1,36 @@
+.roms{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction:row;
+    -ms-flex-align: center;
+    
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 1px black;
+    background-color: rgba(121, 29, 85, 0.50);
+
+    .romstext{
+        font-style: $fuente;
+        font-size: 1.5rem;
+        color: white;
+        
+    }
+
+    .imageroms{
+        width: 140px;
+        padding-left: 25px;
+        
+        
+    }
+}
+
+.roms2{
+@extend .roms;
+background-color: rgba(31, 146, 21, 0.5);
+}
+
+.roms3{
+    @extend .roms;
+    background-color: rgba(16, 23, 122, 0.5);
+    }
