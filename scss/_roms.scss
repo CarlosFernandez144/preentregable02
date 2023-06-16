@@ -27,10 +27,10 @@
 
 .roms2{
 @extend .roms;
-background-color: rgba(31, 146, 21, 0.5);
+background-color: rgba(31, 146, 21, 0.5);   /*extend*/
 }
 
 .roms3{
     @extend .roms;
-    background-color: rgba(16, 23, 122, 0.5);
+    background-color: rgba(16, 23, 122, 0.5);  /*extend*/
     }

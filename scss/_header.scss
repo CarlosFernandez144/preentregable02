@@ -1,21 +1,23 @@
-$navbarbgc: #02303b ;
+$navbarbgc: #02303b ;   /*variable*/
 
-.header { background-color: $navbarbgc;
+.header { 
+    background-color: $navbarbgc;   /*variable*/
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    
 
 
     .navbar{
-        background-color: $navbarbgc;
+        background-color: $navbarbgc;  /*variable*/
         margin-top: 0;
         width: 100%;
      
 
         ul li a {
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease;   /* animacion de los links del Navbar*/
             display: inline-block;
             text-align: center;
             list-style:none;
@@ -44,8 +46,8 @@ $navbarbgc: #02303b ;
     }
 
     .titulos{
-        animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;
+        animation: fadeInLeft; /* agregar animacion*/
+        animation-duration: 2s;
     }
     
 }

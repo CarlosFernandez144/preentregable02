@@ -1,7 +1,8 @@
 @charset "UTF-8";
+/*variable*/
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 .header {
-  background-color: #02303b;
+  background-color: #02303b; /*variable*/
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
@@ -9,12 +10,12 @@
   padding: 1rem;
 }
 .header .navbar {
-  background-color: #02303b;
+  background-color: #02303b; /*variable*/
   margin-top: 0;
   width: 100%;
 }
 .header .navbar ul li a {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* animacion de los links del Navbar*/
   display: inline-block;
   text-align: center;
   list-style: none;
@@ -31,13 +32,14 @@
 .header .logo:hover {
   transform: scale(1.2);
 }
-.header .titulos {
-  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+.header .titulos, .header body .section1 .subtitulos, body .section1 .header .subtitulos {
+  animation: fadeInLeft; /* agregar animacion*/
   animation-duration: 2s;
 }
 
 /*section 1*/
 /* font-family: 'Oswald', sans-serif; */
+/*variables*/
 body {
   background-image: url(../images/fondobody2.png);
 }
@@ -45,11 +47,11 @@ body .section1 {
   background-color: transparent !important;
   /* boton importado de uiverse.io*/
 }
-body .section1 .titulos {
+body .section1 .titulos, body .section1 .subtitulos {
   margin-top: 3rem;
-  background-color: rgba(7, 7, 7, 0.75);
+  background-color: rgba(37, 48, 53, 0.6); /*variable*/
   border-radius: 1.5rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif; /*variable*/
   font-size: 3rem;
   text-align: center;
   display: flex;
@@ -57,20 +59,15 @@ body .section1 .titulos {
   justify-content: space-evenly;
 }
 body .section1 .subtitulos {
-  margin-top: 3rem;
-  background-color: rgba(7, 7, 7, 0.75);
+  /* Extend */
   color: #fff;
-  border-radius: 1.5rem;
-  font-family: "Oswald", sans-serif;
   font-size: 2rem;
   text-align: left;
-  display: flex;
-  flex-wrap: wrap;
 }
 body .section1 .text {
-  background-color: rgba(7, 7, 7, 0.75);
+  background-color: rgba(37, 48, 53, 0.6); /*Variable*/
   border-radius: 1.5rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif; /*Variable*/
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -242,14 +239,16 @@ body .section1 .button:active {
 }
 
 .roms2 {
-  background-color: rgba(31, 146, 21, 0.5);
+  background-color: rgba(31, 146, 21, 0.5); /*extend*/
 }
 
 .roms3 {
-  background-color: rgba(16, 23, 122, 0.5);
+  background-color: rgba(16, 23, 122, 0.5); /*extend*/
 }
 
 /* Importación de fuentes de google fonts */
+/* uso de variable*/
+/* Uso de Mixins*/
 .bglinks {
   color: rgb(12, 12, 12);
 }
@@ -257,12 +256,13 @@ body .section1 .button:active {
 .form {
   height: 100%;
   font-family: "Noto Sans", sans-serif;
-  background-color: rgba(42, 132, 160, 0.1);
+  background-color: rgba(42, 132, 160, 0.1); /*variable*/
 }
 
 .contact_form {
   width: 460px;
   height: auto;
+  /* uso de mixins */
   margin: 80px auto;
   border-radius: 10px;
   padding-top: 30px;
@@ -272,9 +272,10 @@ body .section1 .button:active {
 }
 
 input {
-  background-color: #fbfbfb;
   width: 408px;
   height: 40px;
+  /* uso de mixins */
+  background-color: rgba(9, 144, 185, 0.1);
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -285,9 +286,10 @@ input {
 }
 
 textarea {
-  background-color: #fbfbfb;
   width: 405px;
   height: 150px;
+  /* uso de mixins */
+  background-color: rgba(9, 144, 185, 0.1);
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -304,21 +306,22 @@ label {
 }
 
 .buttonform {
+  width: 420px;
   height: 45px;
+  /* uso de mixins */
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 20px;
   margin-top: 10px;
   text-transform: uppercase;
-  border-color: rgba(42, 132, 160, 0.1);
+  border-color: rgba(42, 132, 160, 0.1); /*variable*/
   border-style: solid;
   border-radius: 10px;
-  width: 420px;
   cursor: pointer;
 }
 
 .buttonform .pform {
-  color: #fff;
+  color: #960d0d;
 }
 
 span {
@@ -332,7 +335,7 @@ span {
 
 .h1form {
   font-size: 39px;
-  text-align: letf;
+  text-align: left;
   padding-bottom: 20px;
   color: black;
 }
@@ -346,24 +349,34 @@ span {
 .pform {
   font-size: 14px;
   color: #0e0e0e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 ::-webkit-input-placeholder {
-  color: #a8a8a8;
+  color: #910606;
 }
 
 ::-webkit-textarea-placeholder {
-  color: #a8a8a8;
+  color: #a30808;
 }
 
 .formulario input:focus {
   outline: 0;
-  border: 1px solid #97d848;
+  border: 3px solid #99107b;
+}
+
+.formulario input:hover {
+  border: 3px solid #22c3c9;
 }
 
 .formulario textarea:focus {
   outline: 0;
-  border: 1px solid #97d848;
+  border: 3px solid #99107b;
+}
+
+.formulario textarea:hover {
+  outline: 0;
+  border: 3px solid #22c3c9;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,9 @@
 /*section 1*/
 /* font-family: 'Oswald', sans-serif; */
-$fuente: 'Oswald', sans-serif;
+$fuente: 'Oswald', sans-serif;     /*variables*/
+$bgtitulos: rgba(37, 48, 53, 0.6);
+
+
 body {
     background-image: url(../images/fondobody2.png);
 
@@ -9,9 +12,9 @@ body {
 
         .titulos{ 
           margin-top: 3rem;
-          background-color: rgba(7, 7, 7, 0.75);
+          background-color:$bgtitulos;  /*variable*/
           border-radius: 1.5rem;
-          font-family: $fuente;
+          font-family: $fuente;         /*variable*/
           font-size: 3rem;
           text-align: center;
           display: flex;
@@ -22,22 +25,17 @@ body {
         }
 
         .subtitulos{
-          margin-top: 3rem;
-          background-color: rgba(7, 7, 7, 0.75);
+          @extend .titulos;  /* Extend */
           color: #fff;
-          border-radius: 1.5rem;
-          font-family: $fuente;
           font-size: 2rem;
           text-align: left;
-          display: flex;
-          flex-wrap: wrap;
           
         }
 
       .text{
-        background-color: rgba(7, 7, 7, 0.75);
+        background-color: $bgtitulos;  /*Variable*/
         border-radius: 1.5rem;
-        font-family: $fuente;
+        font-family: $fuente;    /*Variable*/
         text-align: center;
         display: flex;
         flex-wrap: wrap;
