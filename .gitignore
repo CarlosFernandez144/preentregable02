@@ -6,5 +6,6 @@
 .tiff
 .svg
 .webp
+.txt
 .json
 node_modules

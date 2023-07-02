@@ -5,111 +5,161 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="juegos y emuladores retro">
+    <meta name="keywords" content="juegos, retro, emuladores, roms, nes, snes, gba, descrga, nostaliga">
+    
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
-  <title>Capi Retro Games</title>
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="../images/favicon2.png" />
+  <title>Emuladores</title>
   <!-- Importamos los estilos de Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Importamos las fuentes de google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   <!-- Importamos nuestros propios estilos -->
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Importamos animaciones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <img class="logo" src="../images/icono.png">
-      <a class="navbar-brand" href="#">Capi Retro Games</a>
-      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="emuladores.html">Emuladores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="roms.html">ROMs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="noticias.html">Noticias</a>
-          </li>
-        </ul>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <a href="../index.html"><img class="logo" src="../images/icono.png"></a>
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand">Emuladores</a>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/emuladores.html"><span>Emuladores</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/roms.html">ROMs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/noticias.html">Noticias</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
   <!-- Sección principal con imagen y texto -->
-  <section class="bg-dark fondo text-light">
+  <section class="bg-dark text-light section1">
     <div class="container">
-      <h2 style="text-align: center;"><b><span style="font-size: large;">Emuladores</span></b></h2>
+      <h2 class="titulos">.:Emuladores:.</h2>
     </div>
-    <h2 style="text-align: center;">
-    <b><span style="font-size: large;">¿Qué es un emulador?</span></b></h2>
+
+
+    <!--seccion principal imagenes y titulos-->
+
+    
+    <h2 class="titulos">Emulador VirtuaNES para PC (NES): Descargar e Instalar:</h2>
+
+    
+    <div class="container">
+      <img class="imagen" alt="imagen de consola nes" src="../images/consolanes2.png">
     </div>
-      <img class="imagen" src="../images/emuladores.jpg">
-      <blockquote class="tr_bq" style="text-align: center;">
-        <p class="textemuladores">
-                <span style="font-weight: normal;">
-        Técnicamente, </span>
-        un emulador es un software, que permite ejecutar programas o videojuegos en una plataforma (sea una arquitectura de 
-        hardware o un sistema operativo) diferente de aquella para la cual fueron escritos originalmente: ya sea un pc windows,
-         un android, consolas como psp, ps3, nintendo switch... etc;
-        <span style="font-weight: normal;">Por lo que podemos jugar a nuestras consolas retro favoritas ejecutando un programa 
-        que la emule, y los juegos físicos son substituidos por unos archivos de ordenador que se llaman </span>
-        ROMS.</p>
-        </blockquote>
-        <p class="textemuladores" style="text-align: center;">
-                Hay mucha controversia en el tema de las ROMS ya que son archivos de imagen de juegos originales que están 
-        protegidos por copyright aún a día de hoy por las compañías,
-         lo que ha llevado al cierre de webs de distribución de ROMS últimanente.</p>
-         <img src="../images/mariocorriendo.gif">
-         <p class="textemuladores" style="text-align: center;">En esta web pondremos a su alcance algunos de los emuladores de las consolas mas famosas y clásicas y también sus juegos mas populares, para que tenga a su disposición, aquel que quiera disfrutar y recordar los viejos tiempos, le regalamos un poco de nostalgia.!
-        </p>
-        <img src="../images/abajo.gif">
-    </div>
+
+    <h2 class="titulos">Descargar VirtuaNES Gratis para tu Ordenador.</h2>
+    
+
   </section>
 
-  <!-- Sección intermedia con lista de juegos -->
-  <section class="text-light">
+
+  <section class="bg-dark text-light section2">
+      
+    <h3 class="subtitulos">Para descargar VirtuaNES para PC deberás seguir las siguientes instrucciones:</h3>
+
+    <ol style="text-align: left; font-size: medium; color: white;">
+      <li>Descarga el archivo desde el botón que te dejamos abajo.</li>
+      <li>En caso de que te pida confirmación, confirma la descarga de origen desconocido.</li>
+      <li>Espera a que finalice la descarga.</li>
+      <li>Si el archivo descargado está en formato .zip o .rar tendremos que descomprimirlo.</li>
+      <li>Una vez hayamos descomprimido el contenido, buscamos un archivo .exe (el instalador) en la carpeta.</li>
+      <li>Ejecutamos el archivo .exe.</li>
+      <li>Seguiremos con las instrucciones de instalación.</li>
+    </ol>
+
+    <div class="boton section1">
+
+        <div class="boton">
+            <a href="https://mega.nz/file/ovszSAAY#M50CtI4A7x1xk7zgJJtb10d9pOliMgn3ackUx-v5zrc" target="_blank" ><button class="button">Descarga VirtuaNes</button></a></div>
+        </div>
+
+
+    </div>
+
+    <h3 class="subtitulos">Para instalar VirtuaNES en tu ordenador tendrás que seguir las indicaciones que te dejamos a continuación:</h3>
+ 
+    <ol style="text-align: left; font-size: medium; color: white;">
+      <li>Antes de proceder con la instalación nos aseguraremos de que estamos ejecutando el proceso en un sistema operativo compatible.</li>
+      <li>Una vez ejecutado el archivo de instalación, seguiremos las indicaciones del instalador.</li>
+      <li>Selecciona la opción de crear un acceso directo, así podrás ejecutar el emulador desde el escritorio.</li>
+      <li>Una vez finalizada la instalación, puedes ir al escritorio y pinchar en el icono correspondiente para disfrutar de VirtuaNES.</li>
+      
+    </ol>
+ 
+ 
+  </section>
+
+
+
+   <!-- Sección intermedia con lista de juegos -->
+   <section class="section2">
     <div class="container">
       <div class="row">
-        <div class="col-12  col-sm-8 col-lg-4">
-          <img src="../images/pikachu3.png" class="image8bit">
+        <div class="col-12 col-sm-8 col-lg-4">
+          <img src="../images/pikachucorriendo.gif" class="image8bit">
         </div>
-        <div class="col-12  col-sm-8 col-lg-4">
-          <img src="../images/hunter.png" class="image8bit">
+        <div class="col-12 col-sm-8 col-lg-4">
+          <img src="../images/mariocorriendo.gif" class="image8bit">
         </div>
-        <div class="col-12  col-sm-8 col-lg-4">
-          <img src="../images/gusano.png" class="image8bit">
+        <div class="col-12 col-sm-8 col-lg-4">
+          <img src="../images/contracorriendo.gif" class="image8bit">
         </div>
       </div>
     </div>
+
     <div class="container">
       <h2>Nuestros juegos favoritos</h2>
       <ul class="list-unstyled">
-        <li>Super Mario Bros.</li>
-        <li>The Legend of Zelda</li>
-        <li>Mega Man</li>
-        <li>Street Fighter II</li>
-        <li>Sonic the Hedgehog</li>
+        <a href="../pages/roms.html"><li>Super Mario Bros</li></a>
+        <a href="../pages/roms.html"><li>Pokemon</li></a>
+        <a href="../pages/roms.html"><li>Adventure Islander III</li></a>
+        <a href="../pages/roms.html"><li>Super Contra</li></a>
+        <a href="../pages/roms.html"><li>Spartan</li></a>
       </ul>
     </div>
   </section>
 
   <!-- Footer con datos del desarrollador -->
-  <footer class="text-light">
-    <div class="container">
-      <p class="text-center">Desarrollado por Carlos Fernandez © </p>
+  <footer>
+    <div class="footer">
+      <p class="text-footer">Desarrollado por Carlos Fernandez © </p>
     </div>
   </footer>
 
@@ -118,7 +168,9 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
+
+
 </body>
 
 </html>
-	

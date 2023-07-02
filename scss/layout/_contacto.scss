@@ -1,0 +1,154 @@
+/* Importación de fuentes de google fonts */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* uso de variable*/
+$bg-color: rgba(42, 132, 160, 0.1);
+
+/* Uso de Mixins*/
+@mixin sizes($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+
+
+.bglinks {
+	color: rgb(12, 12, 12);
+}
+
+.form {
+	height: 100%;
+	font-family: 'Noto Sans', sans-serif;
+	background-color: $bg-color;   /*variable*/
+}
+
+
+.contact_form {
+	@include sizes(460px, auto);  /* uso de mixins */
+	margin: 80px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-image: url(../images/fondoform.jpg);
+	padding-left: 30px;
+}
+
+
+
+input {
+	@include sizes(408px, 40px);   /* uso de mixins */ 
+	background-color: rgba(9, 144, 185, 0.1) ;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+
+textarea {
+	@include sizes(405px, 150px);   /* uso de mixins */
+	background-color: rgba(9, 144, 185, 0.1);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+
+
+label {
+	display: block;
+	float: center;
+}
+
+
+.buttonform {
+	@include sizes(420px, 45px);  /* uso de mixins */
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	border-color: $bg-color;    /*variable*/
+	border-style: solid;
+	border-radius: 10px;
+
+	cursor: pointer;
+}
+
+
+.buttonform .pform {
+	color: #960d0d;
+}
+
+
+span {
+	color: rgb(216, 34, 233);
+
+
+}
+
+
+.aviso {
+	font-size: 13px;
+	color: #aa2a8a;
+}
+
+
+.h1form {
+	font-size: 39px;
+	text-align: left;
+	padding-bottom: 20px;
+	color: black;
+}
+
+
+.h3form {
+	font-size: 16px;
+	padding-bottom: 30px;
+	color: #0e0e0e;
+}
+
+
+.pform {
+	font-size: 14px;
+	color: #0e0e0e;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+::-webkit-input-placeholder {
+	color: #910606;
+}
+
+
+::-webkit-textarea-placeholder {
+	color: #a30808;
+}
+
+
+.formulario input:focus {
+	outline: 0;
+	border: 3px solid #99107b;
+
+}
+.formulario input:hover{
+	border: 3px solid #22c3c9;
+}
+
+.formulario textarea:focus {
+	outline: 0;
+	border: 3px solid #99107b;
+
+}
+
+.formulario textarea:hover {
+	outline: 0;
+	border: 3px solid #22c3c9;
+}
