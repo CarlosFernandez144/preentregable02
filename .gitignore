@@ -1,4 +1,10 @@
-.jpeg
 .jpg
+.jpeg
 .png
-.txt
+.gif
+.bmp
+.tiff
+.svg
+.webp
+.json
+node_modules
