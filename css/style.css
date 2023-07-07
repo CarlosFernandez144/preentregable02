@@ -307,6 +307,7 @@ span {
   border: 3px solid #22c3c9;
 }
 
+/* animacion de los links */
 .underline-link {
   position: relative;
   text-decoration: none;
@@ -416,6 +417,17 @@ span {
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
+}
+
+/*boton volver arriba*/
+#back-to-top-btn {
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
