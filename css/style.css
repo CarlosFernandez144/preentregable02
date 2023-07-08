@@ -182,24 +182,28 @@ body .section1 .imagen {
   color: rgb(12, 12, 12);
 }
 
+/* estilo del formulario */
 .form {
-  height: 100%;
+  height: 80%;
   font-family: "Noto Sans", sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contact_form {
-  width: 460px;
+  width: auto;
   height: auto;
   /* uso de mixins */
   margin: 80px auto;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 20px;
   background-image: url(../images/fondoform.jpg);
-  padding-left: 30px;
 }
 
-input {
+/* nombre, email, telefono, etc*/
+input, textarea {
   width: 408px;
   height: 40px;
   /* uso de mixins */
@@ -207,7 +211,7 @@ input {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: black;
+  border-color: rgb(44, 75, 212);
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -217,15 +221,7 @@ textarea {
   width: 405px;
   height: 150px;
   /* uso de mixins */
-  background-color: rgba(9, 144, 185, 0.1);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+  /*extend*/
 }
 
 label {
@@ -234,7 +230,7 @@ label {
 }
 
 .buttonform {
-  width: 420px;
+  width: 410px;
   height: 45px;
   /* uso de mixins */
   padding-left: 5px;
@@ -245,24 +241,27 @@ label {
   border-color: rgba(42, 132, 160, 0.1); /*variable*/
   border-style: solid;
   border-radius: 10px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgb(44, 75, 212);
   cursor: pointer;
 }
 
 .buttonform .pform {
-  color: #960d0d;
+  color: #0f0d0d;
 }
 
-span {
-  color: rgb(216, 34, 233);
+span, .aviso {
+  color: rgb(197, 23, 212);
 }
 
 .aviso {
+  /*extend*/
   font-size: 13px;
-  color: #aa2a8a;
 }
 
 .h1form {
-  font-size: 39px;
+  font-size: 36px;
   text-align: left;
   padding-bottom: 20px;
   color: black;
@@ -271,40 +270,40 @@ span {
 .h3form {
   font-size: 16px;
   padding-bottom: 30px;
-  color: #0e0e0e;
+  color: black;
 }
 
 .pform {
   font-size: 14px;
-  color: #0e0e0e;
+  color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 ::-webkit-input-placeholder {
-  color: #910606;
+  color: black;
 }
 
 ::-webkit-textarea-placeholder {
-  color: #a30808;
+  color: #050000;
 }
 
-.formulario input:focus {
+.formulario input:focus, .formulario textarea:focus {
   outline: 0;
-  border: 3px solid #99107b;
+  border: 3px solid black;
 }
 
-.formulario input:hover {
-  border: 3px solid #22c3c9;
+.formulario input:hover, .formulario textarea:hover {
+  border: 3px solid black;
 }
 
 .formulario textarea:focus {
   outline: 0;
-  border: 3px solid #99107b;
+  border: 3px solid black;
 }
 
 .formulario textarea:hover {
   outline: 0;
-  border: 3px solid #22c3c9;
+  border: 3px solid black;
 }
 
 /* animacion de los links */
