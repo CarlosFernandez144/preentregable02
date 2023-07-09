@@ -79,6 +79,16 @@ body .section1 .imagen {
   justify-content: center;
   width: 500px;
 }
+body .section1 .noti {
+  color: black;
+  background-color: white;
+  border-radius: 1.5rem;
+  font-family: "Oswald", sans-serif; /*Variable*/
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -427,6 +437,22 @@ span, .aviso {
   background-color: transparent;
   color: #fff;
   text-decoration: none;
+}
+
+/*estilos del carousel*/
+.imgcarousel {
+  width: 100%;
+  height: auto;
+}
+
+.flecha {
+  background-color: rgb(92, 3, 58);
+  width: 2rem;
+  padding: 3px;
+}
+
+.carousel {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
